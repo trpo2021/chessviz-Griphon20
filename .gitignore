@@ -1,5 +1,4 @@
-logs.rtf
-
-* .docx
-* .png
+*.rtf
+*.docx
+*.png
 txt.txt
