@@ -1,4 +1,8 @@
-*.rtf
-*.docx
 *.png
+*.o
+.main.c.swp
+main.c ~
+main.exe
+*.c#
+makefile ~
 txt.txt
