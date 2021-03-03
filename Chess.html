@@ -5,135 +5,128 @@
     <title>Chessvizion</title>
     <style>
 
-     table.chess-board {border-spacing: 0;border-collapse: collapse;}
-     table.chess-board th {padding: .5em;}
+     table.chess-board {border-collapse: collapse;}
      table.chess-board td {border: 1px solid;width: 2.1em;height: 2.1em;}
-     table.chess-board .dark {background: #946f51;}
-     table.chess-board .light {background: #F0D9B5;}
-     table.chess-board .wK:before {font-size: 2em;content: "\2654";}
-     table.chess-board .wQ:before {font-size: 2em;content: "\2655";}
-     table.chess-board .wR:before {font-size: 2em;content: "\2656";}
-     table.chess-board .wB:before {font-size: 2em;content: "\2657";}
-     table.chess-board .wN:before {font-size: 2em;content: "\2658";}
-     table.chess-board .wP:before {font-size: 2em;content: "\2659";}
      table.chess-board .bK:before {font-size: 2em;content: "\265A";}
      table.chess-board .bQ:before {font-size: 2em;content: "\265B";}
      table.chess-board .bR:before {font-size: 2em;content: "\265C";}
      table.chess-board .bB:before {font-size: 2em;content: "\265D";}
      table.chess-board .bN:before {font-size: 2em;content: "\265E";}
      table.chess-board .bP:before {font-size: 2em;content: "\265F";}
+     table.chess-board .wK:before {font-size: 2em;content: "\2654";}
+     table.chess-board .wQ:before {font-size: 2em;content: "\2655";}
+     table.chess-board .wR:before {font-size: 2em;content: "\2656";}
+     table.chess-board .wB:before {font-size: 2em;content: "\2657";}
+     table.chess-board .wN:before {font-size: 2em;content: "\2658";}
+     table.chess-board .wP:before {font-size: 2em;content: "\2659";}
+     table.chess-board .dark {background: #946f51;}
+     table.chess-board .light {background: #F0D9B5;}
     </style>
 </head>
 
 <body>
-    <div class="box">
-        <div class="centered">
-
-            <table class="chess-board">
-                <tbody>
-                    <tr>
-                        <th>8</th>
-                        <td class="light"><span class="bR"></span></td>
-                        <td class="dark"><span class="bN"></span></td>
-                        <td class="light"><span class="bB"></span></td>
-                        <td class="dark"><span class="bQ"></span></td>
-                        <td class="light"><span class="bK"></span></td>
-                        <td class="dark"><span class="bB"></span></td>
-                        <td class="light"><span class="bN"></span></td>
-                        <td class="dark"><span class="bR"></span></td>
-                    </tr>
-                    <tr>
-                        <th>7</th>
-                        <td class="dark"><span class="bP"></span></td>
-                        <td class="light"><span class="bP"></span></td>
-                        <td class="dark"><span class="bP"></span></td>
-                        <td class="light"><span class="bP"></span></td>
-                        <td class="dark"><span class="bP"></span></td>
-                        <td class="light"><span class="bP"></span></td>
-                        <td class="dark"><span class="bP"></span></td>
-                        <td class="light"><span class="bP"></span></td>
-                    </tr>
-                    <tr>
-                        <th>6</th>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                    </tr>
-                    <tr>
-                        <th>5</th>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                    </tr>
-                    <tr>
-                        <th>4</th>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                    </tr>
-                    <tr>
-                        <th>3</th>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                        <td class="dark"></td>
-                        <td class="light"></td>
-                    </tr>
-                    <tr>
-                        <th>2</th>
-                        <td class="light"><span class="wP"></span></td>
-                        <td class="dark"><span class="wP"></span></td>
-                        <td class="light"><span class="wP"></span></td>
-                        <td class="dark"><span class="wP"></span></td>
-                        <td class="light"><span class="wP"></span></td>
-                        <td class="dark"><span class="wP"></span></td>
-                        <td class="light"><span class="wP"></span></td>
-                        <td class="dark"><span class="wP"></span></td>
-                    </tr>
-                    <tr>
-                        <th>1</th>
-                        <td class="dark"><span class="wR"></span></td>
-                        <td class="light"><span class="wN"></span></td>
-                        <td class="dark"><span class="wB"></span></td>
-                        <td class="light"><span class="wQ"></span></td>
-                        <td class="dark"><span class="wK"></span></td>
-                        <td class="light"><span class="wB"></span></td>
-                        <td class="dark"><span class="wN"></span></td>
-                        <td class="light"><span class="wR"></span></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>D</th>
-                        <th>E</th>
-                        <th>F</th>
-                        <th>G</th>
-                        <th>H</th>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-    </div>
+    <table class="chess-board">
+        <tbody>
+            <tr>
+                <th>8</th>
+                <td class="light"><span class="bR"></span></td>
+                <td class="dark"><span class="bN"></span></td>
+                <td class="light"><span class="bB"></span></td>
+                <td class="dark"><span class="bQ"></span></td>
+                <td class="light"><span class="bK"></span></td>
+                <td class="dark"><span class="bB"></span></td>
+                <td class="light"><span class="bN"></span></td>
+                <td class="dark"><span class="bR"></span></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td class="dark"><span class="bP"></span></td>
+                <td class="light"><span class="bP"></span></td>
+                <td class="dark"><span class="bP"></span></td>
+                <td class="light"><span class="bP"></span></td>
+                <td class="dark"><span class="bP"></span></td>
+                <td class="light"><span class="bP"></span></td>
+                <td class="dark"><span class="bP"></span></td>
+                <td class="light"><span class="bP"></span></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="light"><span class="wP"></span></td>
+                <td class="dark"><span class="wP"></span></td>
+                <td class="light"><span class="wP"></span></td>
+                <td class="dark"><span class="wP"></span></td>
+                <td class="light"><span class="wP"></span></td>
+                <td class="dark"><span class="wP"></span></td>
+                <td class="light"><span class="wP"></span></td>
+                <td class="dark"><span class="wP"></span></td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="dark"><span class="wR"></span></td>
+                <td class="light"><span class="wN"></span></td>
+                <td class="dark"><span class="wB"></span></td>
+                <td class="light"><span class="wQ"></span></td>
+                <td class="dark"><span class="wK"></span></td>
+                <td class="light"><span class="wB"></span></td>
+                <td class="dark"><span class="wN"></span></td>
+                <td class="light"><span class="wR"></span></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
