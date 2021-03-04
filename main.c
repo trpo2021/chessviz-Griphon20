@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() 
+int main()
 {
-	system("Chess.html");
-	return 0;
+    system("x-www-browser Chess.html");
+    return 0;
 }
